@@ -181,7 +181,7 @@ if __name__ == "__main__":
     parser.add_argument("--cert-file", help="SSL certificate file (for HTTPS)")
     parser.add_argument("--key-file", help="SSL key file (for HTTPS)")
     parser.add_argument(
-        "--host", default="localhost", help="Host for HTTP server (default: localhost)"
+        "--host", default="127.0.0.1", help="Host for HTTP server (default: localhost)"
     )
     # parser.add_argument(
     #     "--port", type=int, default=8080, help="Port for HTTP server (default: 8080)"
@@ -207,5 +207,5 @@ if __name__ == "__main__":
     app.router.add_get("/client.js", javascript)
     app.router.add_post("/offer", offer)
     web.run_app(
-        app, access_log=None, host=args.host, port=7000, ssl_context=ssl_context
+        app, access_log=None, host=args.host, port=5000, ssl_context=ssl_context
     )
