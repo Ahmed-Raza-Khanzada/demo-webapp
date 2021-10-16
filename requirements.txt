@@ -1,3 +1,5 @@
+opencv-contrib-python==4.5.3.56
+opencv-python==4.1.0.25
 absl-py==0.14.1
 gunicorn==19.9.0
 aiohttp==3.7.4.post0
@@ -28,8 +30,6 @@ mediapipe==0.8.8
 multidict==5.2.0
 netifaces==0.11.0
 numpy==1.21.2
-opencv-contrib-python==4.5.3.56
-opencv-python==4.3.0.38
 packaging==21.0
 Pillow==8.3.2
 protobuf==3.18.1
